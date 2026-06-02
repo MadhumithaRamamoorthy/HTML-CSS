@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+:root{
+--bg:white;
+--text:black;
+}
+
+#toggle:checked ~ .container{
+--bg:#222;
+--text:white;
+}
+
+.container{
+background:var(--bg);
+color:var(--text);
+height:100vh;
+padding:20px;
+transition:0.5s;
+}
+
+#toggle{
+display:none;
+}
+
+label{
+padding:10px;
+background:gray;
+color:white;
+cursor:pointer;
+display:inline-block;
+margin:10px;
+}
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="toggle">
+
+<label for="toggle">
+Dark Mode
+</label>
+
+<div class="container">
+<h1>Welcome</h1>
+<p>This is Dark Mode Toggle using CSS only.</p>
+</div>
+
+</body>
+</html>
